@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "Useracess";
+}
+<link href="~/Content/Sidebar.css" rel="stylesheet" />
+
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <span>
+                <img src="~/Image/Help.png" alt="image" />
+
+                <h3 style="margin-top: 7%">HelpDesk</h3>
+            </span>
+            <hr />
+            <div class="user">
+                <span>
+                    <img src="~/Image/User.png" alt="image" />
+
+                    <h3 style="margin-top: 7%">
+                        @Html.ActionLink("Dashboard", "Index", "UserDashboard")
+                    </h3>
+                </span>
+            </div>
+            <hr />
+            <div class="user">
+                <span>
+                    <img src="~/Image/User.png" alt="image" />
+
+                    <h3 style="margin-top: 7%">
+                        @Html.ActionLink("Userd", "Useracess", "UserDashboard")
+                    </h3>
+                </span>
+            </div>
+            <hr />
+        </div>
+        <div class="content">
+            <nav>
+                <button>Sign Out</button>
+            </nav>
+            <hr />
+            <h3>Welocme USer table</h3>
+        </div>
+    </div>
+    <hr />
+
+    <footer class="foot">
+        <div class="footer">
+            <p>HelpDesk CopyRight 2023 .All right Reserved</p>
+        </div>
+    </footer>
+</body>

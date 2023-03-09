@@ -1,0 +1,175 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<link href="~/Content/Sidebar.css" rel="stylesheet" />
+
+<div class="container">
+    <div class="sidebar">
+        <span>
+            <img src="~/Image/Help.png" alt="image" />
+
+            <h3 style="margin-top: 7%">HelpDesk</h3>
+        </span>
+        <hr />
+        <div class="Ticket">
+            <span>
+                <img src="~/Image/User.png" alt="image" />
+
+                <h3 style="margin-top: 7%">@Html.ActionLink("Dashboard", "Index", "Dashboard")</h3>
+            </span>
+        </div>
+        <hr />
+        <div class="user">
+            <span>
+                <img src="~/Image/User.png" alt="image" />
+
+                <h3 style="margin-top: 7%">@Html.ActionLink("User", "Userd", "Dashboard")</h3>
+            </span>
+        </div>
+        <hr />
+        <div class="user">
+            <span>
+                <img src="~/Image/User.png" alt="image" />
+
+                <h3 style="margin-top: 7%">@Html.ActionLink("Ticket", "Tickets", "Dashboard")</h3>
+            </span>
+        </div>
+        <hr />
+        <div class="user">
+            <span>
+                <img src="~/Image/User.png" alt="image" />
+
+                <h3 style="margin-top: 7%">@Html.ActionLink("Department", "Department", "Dashboard")</h3>
+            </span>
+        </div>
+        <hr />
+        <div class="contact">
+            <span>
+                <img src="~/Image/Contact.png" alt="image" />
+
+                <h3 style="margin-top: 7%">Contact</h3>
+            </span>
+        </div>
+        <hr />
+    </div>
+    <div class="content">
+        <nav>
+            <button>Sign Out</button>
+        </nav>
+        <hr />
+        <div class="card">
+            <div class="card1">
+                <div class="col">
+                    <h1>19</h1>
+                    <p>Total Tickets</p>
+                </div>
+                <div class="imgi">
+                    <img src="https://cdn-icons-png.flaticon.com/512/187/187885.png"
+                         alt="image" />
+                </div>
+            </div>
+            <div class="card2">
+                <div class="col">
+                    <h1>19</h1>
+                    <p>Open Tickets</p>
+                </div>
+                <div class="imgii">
+                    <img src="https://www.freeiconspng.com/uploads/business-chart-diagram-icon-0.png"
+                         alt="image" />
+                </div>
+            </div>
+            <div class="card3">
+                <div class="col">
+                    <h1>19</h1>
+                    <p>Progress Tickets</p>
+                </div>
+                <div class="imgii">
+                    <img src="https://www.freeiconspng.com/uploads/business-chart-diagram-icon-0.png"
+                         alt="image" />
+                </div>
+            </div>
+            <div class="card4">
+                <div class="col">
+                    <h1>19</h1>
+                    <p>Close Tickets</p>
+                </div>
+                <div class="imgii">
+                    <img src="https://www.freeiconspng.com/uploads/business-chart-diagram-icon-0.png"
+                         alt="image" />
+                </div>
+            </div>
+        </div>
+        <h1 class="heading">Tickets Completion Rate</h1>
+        <div class="wrapper">
+            <div class="pie-wrap">
+                <div class="light-yellow entry">
+                    <p>25%</p>
+                    <p class="entry-value">Frontend</p>
+                </div>
+
+                <div class="sky-blue entry">
+                    <p>25%</p>
+                    <p class="entry-value">Devops</p>
+                </div>
+
+                <div class="pink entry">
+                    <p>25%</p>
+                    <p class="entry-value">Salesforce</p>
+                </div>
+
+                <div class="purple entry">
+                    <p></p>
+                    <p class="entry-value">Fullstack</p>
+                </div>
+
+                <div class="green entry">
+                    <p>12.5%</p>
+                    <p class="entry-value">Backend</p>
+                </div>
+
+                <div class="wheat entry">
+                    <p>12.5%</p>
+                    <p class="entry-value">Java</p>
+                </div>
+            </div>
+
+            <div class="key-wrap">
+                <!-- <input type="radio" id="rice" name="values" class="rice-key" />
+                <label for="rice" class="rice-label">Frontend</label> -->
+
+                <input type="radio" name="values" id="beans" class="beans-key" />
+                <label for="beans" class="beans-label"> Salesforce</label>
+
+                <input type="radio"
+                       name="values"
+                       id="plantain"
+                       class="plantain-key" />
+                <label for="plantain" class="plantain-label">Devops</label>
+
+                <input type="radio" name="values" id="potato" class="potato-key" />
+                <label for="potato" class="potato-label"> Backend</label>
+
+                <input type="radio" name="values" id="yam" class="yam-key" />
+                <label for="yam" class="yam-label"> Java</label>
+
+                <input type="radio" name="values" id="pasta" class="pasta-key" />
+                <label for="pasta" class="pasta-label"> FullStack</label>
+                <!-- <p class="rice-text text">25% Tickets of Devops</p> -->
+                <p class="beans-text text">25% Tickets of Java</p>
+                <p class="plantain-text text">12.5% Tickets of FullStack</p>
+                <p class="potato-text text">12.5% Tickets of Salesforce</p>
+                <p class="yam-text text">25% Tickets of Backend</p>
+                <p class="pasta-text text">25% Tickets of Frontend</p>
+            </div>
+        </div>
+    </div>
+</div>
+<hr />
+
+<footer class="foot">
+    <div class="footer">
+        <p>HelpDesk CopyRight 2023 .All right Reserved</p>
+    </div>
+</footer>
+  </body>
